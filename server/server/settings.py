@@ -135,6 +135,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-import os
+
 GEMINI_API_KEY= os.getenv('GEMINI_API_KEY')
-GEMINI_API_URL = os.getenv('GEMINI_API_URL')
+GEMINI_API_URL = os.getenv('GEMINI_API_URL',"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent")

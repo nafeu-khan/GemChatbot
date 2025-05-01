@@ -8,6 +8,7 @@ import asyncio
 class ChatbotView(APIView):
     def post(self, request):
         try:
+            print("Received request:", request.data)
             serializer = MessageSerializer(data=request.data)
             if serializer.is_valid():
                 user_msg = serializer.validated_data['message']
