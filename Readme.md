@@ -1,4 +1,4 @@
-# 🤖 Gemini Chatbot (Django + Next.js)
+# 🤖 GemChatbot (Django + Next.js)
 
 A full-stack chatbot interface using Google Gemini API for natural language processing, built with:
 
