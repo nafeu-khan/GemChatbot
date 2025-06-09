@@ -24,7 +24,7 @@ export default function ChatBox() {
     if (!input.trim()) return;
     const newUserMsg: ChatMessage = { role: 'user', content: input };
     setMessages(prev => [...prev, newUserMsg]);
-    // setInput('');
+    setInput('');
     setLoading(true);
   
     try {
@@ -62,7 +62,7 @@ export default function ChatBox() {
                   {String(children).replace(/\n$/, '')}
                 </SyntaxHighlighter>
               ) : (
-                <code className="bg-gray-200 rounded px-1 text-sm">{children}</code>
+                <code className="bg-gray-200 rounded px-1 text-md text-pretty">{children}</code>
               );
             },
           }}
